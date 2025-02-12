@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class Requete {
-    //Attribut paramètre BDD
+    //Attribut paramètre BDD localhost si absence de Env.java
     private static final String DB_URL = "jdbc:mysql://localhost:3306/cdaLibrary";
     private static final String USERNAME = "root"; // Change if necessary
     private static final String PASSWORD = ""; // Change if necessary
@@ -72,7 +72,7 @@ public class Requete {
             String sql = "SELECT nom_livre, description_livre, date_publication_livre, genre_livre FROM Livre";
             //Préparation de la requête
             PreparedStatement preparedStatement = connexion.prepareStatement(sql);
-            //Bind des paramètres
+            // Exécution de la requête
             ResultSet rs = preparedStatement.executeQuery();
             //Parcours du résultat
             while (rs.next()) {

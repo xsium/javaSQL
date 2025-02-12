@@ -39,9 +39,9 @@ public class Livre {
         return this.genre;
     }
     public String getGenreAsString() {
-        String listGenre= "";
+        String listGenre = "";
         for(int i=0; i<this.getGenre().size();i++){
-            listGenre= listGenre +this.getGenre().get(i)+";";
+            listGenre = listGenre +this.getGenre().get(i)+";";
         }
         return listGenre;
     }
