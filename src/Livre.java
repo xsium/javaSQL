@@ -151,11 +151,14 @@ public class Livre {
         }
     }
     public static void help(){
+        System.out.println("-------------------------------------------------");
         System.out.println("available commands:");
+        System.out.println("-------------------------------------------------");
         System.out.println("add : allow the user to manually add a book to the library by following the instructions.");
         System.out.println("remove : allow the user to manually remove a book from the library by giving the correct title when prompted to do so.");
         System.out.println("findAll : allow the user to display the title of all the books in the library.");
         System.out.println("display : allow the user to display all of the informations we have about a particular book. The user will be asked to enter the correct title.");
         System.out.println("quit : close the library application.");
+        System.out.println("-------------------------------------------------");
     }
 }
