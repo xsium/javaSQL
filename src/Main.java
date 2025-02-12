@@ -16,11 +16,13 @@ public class Main {
         ArrayList<Livre> cdaLibrary = new ArrayList<Livre>();
         boolean on = true;
         System.out.println("Welcome to our secret library");
+        System.out.println("        へ     ♡  ╱|、\n     ૮ - ՛ )    (`- 7\n      / ⁻ ៸|      |、⁻〵\n   乀(ˍ,ل ل      じしˍ,)ノ");
+
         Requete.loadDB(cdaLibrary);
 
         while (on) {
             try {
-                System.out.println("Awaiting your command, type help to get a list :");
+                System.out.println("Awaiting your command, type help to get the list of commands :");
                 String query = scanner.nextLine();
 
                 switch (query) {
@@ -45,7 +47,7 @@ public class Main {
                         on=false;
                         break;
                     default:
-                        System.out.println("command invalid");
+                        System.out.println("invalid command");
                 }
             } catch (InputMismatchException e) {
                 throw new InputMismatchException("please, respect the books");

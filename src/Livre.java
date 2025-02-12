@@ -80,7 +80,7 @@ public class Livre {
         System.out.println("Date of publication: "+this.datePublication);
         System.out.println("Genres:");
         for(int i=0; i<this.genre.size();i++){
-            System.out.println(i+"- "+this.genre.get(i));
+            System.out.println(i+1+"- "+this.genre.get(i));
         }
         System.out.println("-------------------------------------------------");
     }
@@ -95,7 +95,7 @@ public class Livre {
         ArrayList<String> genres= new ArrayList<String>();
         boolean genreLoop=true;
         while(genreLoop){
-            System.out.println("Enter the books' genre , use 'ok' to validate your entries,'reset' to clear all previous genres, 'cancel' to redo the last entry");
+            System.out.println("Enter the book's genre , use 'ok' to validate your entries,'reset' to clear all previous genres, 'cancel' to redo the last entry");
             String genre= sc.nextLine();
             switch (genre) {
                 case "ok":
@@ -120,7 +120,7 @@ public class Livre {
     }
     public static void removeLivre(ArrayList<Livre> library, Scanner sc){
         boolean deleted=false;
-        System.out.println("Enter the title or the book to remove:");
+        System.out.println("Enter the title of the book to remove:");
         String title= sc.nextLine();
         for(int i=0; i<library.size(); i++){
             if(library.get(i).getTitre().equals(title)){
@@ -156,7 +156,7 @@ public class Livre {
         System.out.println("add : allow the user to manually add a book to the library by following the instructions.");
         System.out.println("remove : allow the user to manually remove a book from the library by giving the correct title when prompted to do so.");
         System.out.println("findAll : allow the user to display the title of all the books in the library.");
-        System.out.println("display : allow the user to display of the informations we have about a particular book. he will be asked to enter the correct title.");
+        System.out.println("display : allow the user to display all of the informations we have about a particular book. The user will be asked to enter the correct title.");
         System.out.println("quit : close the library application.");
     }
 }
