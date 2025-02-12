@@ -15,8 +15,9 @@ public class Main {
     public static void bibliotheque(Scanner scanner) {
         ArrayList<Livre> cdaLibrary = new ArrayList<Livre>();
         boolean on = true;
+        String cat="        へ     ♡  ╱|、\n     ૮ - ՛ )    (`- 7\n      / ⁻ ៸|      |、⁻〵\n   乀(ˍ,ل ل      じしˍ,)ノ";
         System.out.println("Welcome to our secret library");
-        System.out.println("        へ     ♡  ╱|、\n     ૮ - ՛ )    (`- 7\n      / ⁻ ៸|      |、⁻〵\n   乀(ˍ,ل ل      じしˍ,)ノ");
+        System.out.println(cat);
 
         Requete.loadDB(cdaLibrary);
 
@@ -45,6 +46,9 @@ public class Main {
                         break;
                     case "quit":
                         on=false;
+                        break;
+                    case "cat":
+                        System.out.println(cat);
                         break;
                     default:
                         System.out.println("invalid command");

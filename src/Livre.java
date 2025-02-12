@@ -158,6 +158,7 @@ public class Livre {
         System.out.println("remove : allow the user to manually remove a book from the library by giving the correct title when prompted to do so.");
         System.out.println("findAll : allow the user to display the title of all the books in the library.");
         System.out.println("display : allow the user to display all of the informations we have about a particular book. The user will be asked to enter the correct title.");
+        System.out.println("cat : bring out the cute little cats ! I know you wanna pet them.");
         System.out.println("quit : close the library application.");
         System.out.println("-------------------------------------------------");
     }
