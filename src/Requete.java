@@ -3,14 +3,12 @@ import java.util.ArrayList;
 
 public class Requete {
     //Attribut paramètre BDD
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/cdaLibrary";
-    private static final String USERNAME = "root"; // Change if necessary
-    private static final String PASSWORD = ""; // Change if necessary
+    //voir Env.java
     //Connexion à la BDD
     private static final Connection connexion;
     static {
         try {
-            connexion = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+            connexion = DriverManager.getConnection(Env.DB_URL, Env.USERNAME, Env.PASSWORD);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
